@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainly Backend API Docs</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Dark Mode Page Background with Centralized Blue Glow Effect */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(circle, rgba(0, 51, 102, 0.7) 20%, rgba(18, 18, 18, 1) 80%);
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+            max-width: 1000px;
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 20px 0;
+
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Main Content Section */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* API Section */
+        h2 {
+            font-size: 2em;
+            color: #00aaff;
+            margin-bottom: 15px;
+        }
+
+        .route {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .route h3 {
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .route p {
+            font-size: 1.1em;
+            color: #b0b0b0;
+        }
+
+        .route pre {
+            background-color: #333;
+            color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Footer Section */
+
+
+        a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .promo {
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 1000px;
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Brainly Backend API</h1>
+        <p>Comprehensive Documentation for API Endpoints</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to the official documentation for the Brainly Backend API. Below you'll find all available
+                endpoints, along with details on how to interact with them.</p>
+        </section>
+
+        <section>
+            <h2>Available Routes</h2>
+
+            <div class="route">
+                <h3>/api/v1/user</h3>
+                <p>Handles user-related operations such as registration, login, and user profile updates.</p>
+                <pre>
+GET /api/v1/user - Get user details.
+POST /api/v1/user/signup - User login.
+POST /api/v1/user/signin - Register a new user.
+                </pre>
+            </div>
+
+            <!-- Contents Routes -->
+            <div class="route">
+                <h3>/api/v1/contents</h3>
+                <p>Manages content creation, retrieval, and editing.</p>
+                <pre>
+GET /api/v1/contents - Get all contents.
+POST /api/v1/contents - Create new content.
+PUT /api/v1/contents/:id - Update content by ID.
+DELETE /api/v1/contents/:id - Delete content by ID.
+                </pre>
+            </div>
+
+            <!-- Brain Routes -->
+            <div class="route">
+                <h3>/api/v1/brain</h3>
+                <p>Contains functionality related to the "brain" (could be related to content search, recommendations,
+                    etc.).</p>
+                <pre>
+GET /api/v1/brain/share - Get brain-related data.
+POST /api/v1/brain/:shareLink - Shareable Link
+                </pre>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="promo">
+        <p>Looking for more? Explore my portfolio and discover my other projects: <a href="https://www.surajv.me"
+                target="_blank">Suraj's Portfolio</a></p>
+    </div>
+
+</body>
+
+</html>
